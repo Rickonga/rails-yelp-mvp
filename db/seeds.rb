@@ -17,7 +17,7 @@ remulade = { name: "Remulade", address: "7 Boundary St, Paris E2 7JE", category:
 sushi_wok = { name: "Sushi Wok", address: "7 Boundary St, Tokio E2 7JE", category: "japanese" }
 
 
-[ dishoom, pizza_east ].each do |attributes|
+[ dishoom, pizza_east, wuerstel, remulade, sushi_wok ].each do |attributes|
   restaurant = Restaurant.create!(attributes)
   puts "Created #{restaurant.name}"
 end
